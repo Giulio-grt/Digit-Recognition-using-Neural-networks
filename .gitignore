@@ -1,0 +1,66 @@
+
+
+# -------------------------
+# Python cache and bytecode
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# -------------------------
+# Conda / virtual environments
+# -------------------------
+# Local conda envs (don’t commit these)
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# For conda, ignore the env directory if you create it inside the project
+*.conda
+*.yml  # Keep this only if you don't want to share environment.yml
+
+# -------------------------
+# Jupyter notebooks
+# -------------------------
+.ipynb_checkpoints
+
+# -------------------------
+# VS Code settings
+# -------------------------
+.vscode/
+.history/
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Logs / debug files
+# -------------------------
+*.log
+
+# -------------------------
+# Model weights / large data files
+# -------------------------
+*.h5
+*.hdf5
+*.ckpt
+*.pb
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# -------------------------
+# Other temp files
+# -------------------------
+*.tmp
+*.temp
+*.swp
+*.swo
