@@ -48,7 +48,7 @@ Thumbs.db
 # -------------------------
 # Model weights / large data files
 # -------------------------
-*.h5
+
 *.hdf5
 *.ckpt
 *.pb
