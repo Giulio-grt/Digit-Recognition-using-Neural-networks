@@ -26,8 +26,8 @@ def top_k_probs(probs: np.ndarray, k: int = 3):
 st.title("Handwritten Digit Recognition")
 
 canvas_result = st_canvas(
-    fill_color="rgba(0, 0, 0, 0)",
-    stroke_width=10,
+    fill_color="rgba(0,0,0,0)",
+    stroke_width=40,
     stroke_color="#000000",
     background_color="#FFFFFF",
     width=600,
@@ -35,6 +35,19 @@ canvas_result = st_canvas(
     drawing_mode="freedraw",
     key="canvas",
 )
+
+st.image(canvas_result.image_data)
+
+rgba = canvas_result.image_data.astype("uint8")
+img_gray = Image.fromarray(rgba, mode="RGBA").convert("L")
+img_28 = img_gray.resize((28, 28), Image.Resampling.LANCZOS)
+
+st.image(img_28)
+
+arr_flat = np.array(img_28).reshape(1, 784)
+st.write("Shape:", arr_flat.shape)
+st.write(arr_flat)
+
 
 if st.button("Predict") and canvas_result.image_data is not None:
     x_tensor, img_28 = preprocess_rgba_to_28x28x1(canvas_result.image_data)
