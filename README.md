@@ -1,7 +1,31 @@
 <img width="500" alt="logo" src="assets/cover.png">
 
-# Handwritten digit Recognition using machine learning
+# Digit Recognition using neural networks
 
-An interactive web application built with Streamlit that recognizes handwritten digits using machine learning. Users can draw a digit (0-9) on a digital canvas, and the pre-trained neural network model instantly predicts which number was drawn.
+Welcome to this brief educational project ! It demonstrates how a convolutional neural network, built with TensorFlow, can recognize handwritten digits.
+
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
+[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg?&style=for-the-badge&logo=Streamlit&logoColor=white)](https://streamlit.io/)
+
+
+## This repository will walk you through
+- Data preprocessing before feeding it into a machine learning model
+- The basics of building a simple convolutional neural network 
+- Building a simple web app to try-out the model yourself ! 
+
+This project assumes only a very basic understanding of Python (mainly data handling with Pandas and NumPy) and is inspired by the tensorflow short videos: ML zero to hero (part 1 to 4) which I highly recommend you check out !
+
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/KNAWp2S3w94?feature=shared)
+
+## What is machine learning ?
+
+
+
+
+
+
+
 
 
