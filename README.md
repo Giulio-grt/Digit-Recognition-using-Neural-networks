@@ -22,41 +22,43 @@ This project assumes only a very basic understanding of Python (mainly data hand
 ## Project structure
 
 ```
+
+
+├── LICENSE
 ├── README.md
 ├── assets
 │   └── cover.png
 ├── src
-│   ├── frontend                        
-│   │   └── main.py                     #Code for the streamlit frontend
-│   └── model               
-│       ├── data                        #All the data needed to train and test the model
-│       ├── train.ipynb                 #Notebook for training the model
-│       └── trained_model.h5            #Trained model to perform the predictions
+│   ├── frontend                         #Code for the streamlit frontend
+│   │   └── main.py
+│   └── model
+│       ├── data                         #Data needed to train and test the model
+│       │   ├── test_data.csv
+│       │   └── train_data.csv
+│       ├── train.ipynb                  #Notebook for training the model
+│       └── trained_model.h5             #Trained model to perform the predictions
 ```
 
 # Project architecture
 
 ```mermaid
 flowchart TB
-    subgraph Repo
-        R[README.md]
-        subgraph Assets
-            A[cover.png]
+    subgraph Src
+        subgraph Model
+            D1[train_data.csv]
+            D2[test_data.csv]
+            T[train.ipynb<br/>Training Notebook]
+            M[trained_model.h5<br/>Saved Model]
         end
-        subgraph Src
-            subgraph Frontend
-                F[main.py<br/>Streamlit UI]
-            end
-            subgraph Model
-                D[data/]
-                T[train.ipynb<br/>Training Notebook]
-                M[trained_model.h5<br/>Saved Model]
-            end
+        subgraph Frontend
+            F[main.py<br/>Streamlit UI]
         end
     end
 
-    %% Flow
-    D --> T --> M --> F
+    %% Workflow with labels
+    D1 -- "train" --> T -- "produces" --> M
+    M -- "evaluate" --> D2
+    M -- "serve" --> F
 ```
 
 
