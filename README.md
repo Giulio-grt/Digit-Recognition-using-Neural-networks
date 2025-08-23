@@ -34,14 +34,29 @@ This project assumes only a very basic understanding of Python (mainly data hand
 │       └── trained_model.h5            #Trained model to perform the predictions
 ```
 
+# Project architecture
 
 ```mermaid
-  graph TD;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
-```
+flowchart TB
+    subgraph Repo
+        R[README.md]
+        subgraph Assets
+            A[cover.png]
+        end
+        subgraph Src
+            subgraph Frontend
+                F[main.py<br/>Streamlit UI]
+            end
+            subgraph Model
+                D[data/]
+                T[train.ipynb<br/>Training Notebook]
+                M[trained_model.h5<br/>Saved Model]
+            end
+        end
+    end
 
+    %% Flow
+    D --> T --> M --> F
+```
 
 
