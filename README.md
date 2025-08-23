@@ -84,9 +84,12 @@ conda activate digit
 ```
 
 ### 3) Understand how the model was built
-Open the training notebook and read through the steps:
+Open the training notebook and run the cells:
 
 - File: `src/model/train.ipynb`
+
+**Note:** You don’t need to install Conda or Python to simply *read* the notebook.  
+> GitHub renders Jupyter notebooks directly in the browser, so you can open `src/model/train.ipynb` and scroll through the code and explanations without setting up anything locally.   
 
 ### 4) Run the web app
 Naviguate to the correct folder :
