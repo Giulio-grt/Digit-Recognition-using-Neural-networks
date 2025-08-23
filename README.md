@@ -19,13 +19,29 @@ This project assumes only a very basic understanding of Python (mainly data hand
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/KNAWp2S3w94?feature=shared)
 
-## What is machine learning ?
+## Project structure
+
+```
+├── README.md
+├── assets
+│   └── cover.png
+├── src
+│   ├── frontend                        
+│   │   └── main.py                     #Code for the streamlit frontend
+│   └── model               
+│       ├── data                        #All the data needed to train and test the model
+│       ├── train.ipynb                 #Notebook for training the model
+│       └── trained_model.h5            #Trained model to perform the predictions
+```
 
 
-
-
-
-
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
 
 
 
