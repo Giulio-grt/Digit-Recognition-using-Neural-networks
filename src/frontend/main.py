@@ -6,7 +6,6 @@ from streamlit_drawable_canvas import st_canvas
 
 # Load the trained model
 model = load_model('src/model/trained_model.h5') 
-
 st.title("Handwritten Digit Recognition")
 
 # Canvas to write on 

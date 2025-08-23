@@ -29,17 +29,18 @@ This project assumes only a very basic understanding of Python (mainly data hand
 ├── assets
 │   └── cover.png
 ├── src
-│   ├── frontend                         #Code for the streamlit frontend
-│   │   └── main.py
-│   └── model
-│       ├── data                         #Data needed to train and test the model
-│       │   ├── test_data.csv
-│       │   └── train_data.csv
-│       ├── train.ipynb                  #Notebook for training the model
-│       └── trained_model.h5             #Trained model to perform the predictions
+│    ├── frontend                         #Code for the streamlit frontend
+│    │   └── main.py
+│    └── model
+│        ├── data                         #Data needed to train and test the model
+│        │   ├── test_data.csv
+│        │   └── train_data.csv
+│        ├── train.ipynb                  #Notebook for training the model
+│        └── trained_model.h5             #Trained model to perform the predictions
+└── environment.yml                       #conda environment dependencies
 ```
 
-# Project architecture
+## Project architecture
 
 ```mermaid
 flowchart TB
@@ -61,4 +62,38 @@ flowchart TB
     M -- "serve" --> F
 ```
 
+## Getting started
 
+### Prerequisites
+- Python 3.10
+- Conda with `conda-forge` channel enabled : 
+
+[![Download Anaconda](https://img.shields.io/badge/Download-Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com/download)
+
+
+### 1) Clone the repo
+```
+git clone https://github.com/Giulio-grt/Digit-Recognition-using-Neural-networks.git
+```
+
+
+### 2) Create the environment with all prerequisties
+```
+conda env create -f environment.yml
+conda activate digit
+```
+
+### 3) Understand how the model was built
+Open the training notebook and read through the steps:
+
+- File: `src/model/train.ipynb`
+
+### 4) Run the web app
+Naviguate to the correct folder :
+```
+cd Digit-Recognition-using-Neural-networks
+```
+Open and run the web app:
+```
+streamlit run src/frontend/main.py
+```

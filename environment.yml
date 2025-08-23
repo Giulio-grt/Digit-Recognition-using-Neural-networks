@@ -1,0 +1,47 @@
+name: digit-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+
+  # Core scientific stack
+  - numpy=1.26.4
+  - pandas=2.3.1
+  - matplotlib=3.10.1
+  - scikit-learn=1.2.2
+  - scipy=1.13.0
+  - h5py=3.14.0
+  - pillow=11.1.0
+
+  # App/UI
+  - streamlit=1.48.1
+  - altair=5.5.0
+
+  # Jupyter (so the training notebook runs)
+  - ipykernel=6.30.1
+  - ipython=8.37.0
+  - jupyter_client=8.6.3
+  - jupyter_core=5.8.1
+
+  # Small utilities you listed
+  - click=8.2.1
+  - typing_extensions=4.12.2
+  - toml=0.10.2
+  - traitlets=5.14.3
+  - tornado=6.5.1
+  - requests=2.32.4
+  - pyyaml=6.0.2
+  - appnope=0.1.4  # macOS nicety; 
+  - pip
+
+  # Pip-only or better via pip
+  - pip:
+      # ML stack (standalone Keras 2.x to match your imports)
+      - tensorflow==2.11.0
+      - keras==2.11.0
+      - tensorflow-estimator==2.11.0
+      - tensorboard==2.11.0
+      - tensorboard-data-server==0.6.1
+
+      # Streamlit canvas widget
+      - streamlit-drawable-canvas==0.9.3
