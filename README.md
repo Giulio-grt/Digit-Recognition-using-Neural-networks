@@ -100,3 +100,26 @@ Open and run the web app:
 ```
 streamlit run src/frontend/main.py
 ```
+
+## A small introduction to machine learning 
+
+Machine Learning (ML) is about teaching computers to recognize patterns from data, rather than programming them with strict rules.  
+
+In our case, instead of telling the computer *how* to recognize a digit, we show it many **examples** of handwritten digits along with the correct labels, and let it **learn the patterns** that distinguish a "3" from an "8" or a "7" from a "1".
+
+At a very high level, the process looks like this:
+
+1. **Data** – A dataset of handwritten digits (images + labels).
+2. **Preprocessing** – Convert the images into numerical arrays so a computer can work with them.
+3. **Model** – A *Convolutional Neural Network (CNN)*, which is especially good at learning from images.
+4. **Training** – The model adjusts its internal parameters to minimize errors on the training data.
+5. **Evaluation** – The model is tested on unseen data (test set) to measure accuracy.
+6. **Prediction** – Once trained, the model can classify new handwritten digits it has never seen before.
+
+
+This project shows one of the simplest yet most classic ML applications — handwritten digit recognition.  
+Once you understand this workflow, you’ll be ready to explore more advanced ML applications in computer vision, natural language processing, and beyond 🚀
+
+## Interested in applying ML to more technical domains?
+
+Check out **RetroChem**, a project exploring machine learning for retrosynthesis in chemistry: [![GitHub](https://img.shields.io/badge/GitHub-RetroChem-181717?style=for-the-badge&logo=github)](https://github.com/Flo-fllt/RetroChem)
