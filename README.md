@@ -122,4 +122,6 @@ Once you understand this workflow, you’ll be ready to explore more advanced ML
 
 ## Interested in applying ML to more technical domains?
 
-Check out **RetroChem**, a project exploring machine learning for retrosynthesis in chemistry: [![GitHub](https://img.shields.io/badge/GitHub-RetroChem-181717?style=for-the-badge&logo=github)](https://github.com/Flo-fllt/RetroChem)
+Check out **RetroChem**, a project exploring machine learning for retrosynthesis in chemistry 🧪👨🏻‍🔬:
+
+[![GitHub](https://img.shields.io/badge/GitHub-RetroChem-181717?style=for-the-badge&logo=github)](https://github.com/Flo-fllt/RetroChem)
