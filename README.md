@@ -2,7 +2,7 @@
 
 # Digit Recognition using neural networks
 
-Welcome to this brief educational project ! It demonstrates how a convolutional neural network, built with TensorFlow, can recognize handwritten digits.
+Welcome to this brief educational project on the basics of computer vision ! Here, we demonstrate how a convolutional neural network (CNN), built with TensorFlow, can recognize handwritten digits.
 
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=purple)](https://jupyter.org/)
