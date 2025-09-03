@@ -21,7 +21,7 @@ This project assumes only a very basic understanding of Python (mainly data hand
 
 ## Important Results 
 
-After training, the model achieved an impressive accuracy of ~99% on the validation set, demonstrating its ability to generalize well to unseen data.
+After training, the model achieved an impressive accuracy of **~99%** on the validation set, demonstrating its ability to generalize well to unseen data.
 This high performance highlights the effectiveness of convolutional neural networks for image classification tasks, even with relatively simple architectures.
 
 Dive into the full training and evaluation process by checking out the [Jupyter Notebook](src/model/train.ipynb)
