@@ -19,6 +19,15 @@ This project assumes only a very basic understanding of Python (mainly data hand
 
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/KNAWp2S3w94?feature=shared)
 
+## Important Results 
+
+After training, the model achieved an impressive accuracy of ~99% on the validation set, demonstrating its ability to generalize well to unseen data.
+This high performance highlights the effectiveness of convolutional neural networks for image classification tasks, even with relatively simple architectures.
+
+Dive into the full training and evaluation process by checking out the [Jupyter Notebook](src/model/train.ipynb)
+
+Feel free to fork the repo, tweak the architecture, or try different datasets to push the boundaries of what this model can do. 
+
 ## Project structure
 
 ```
